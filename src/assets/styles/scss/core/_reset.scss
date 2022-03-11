@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-family: "Roboto", sans-serif;
+//   @apply font-bold mb-3;
+//   line-height: 1.2;
+// }
+// button {
+//   font-family: "Roboto", sans-serif;
+// }
+// h1 {
+//   font-size: 3rem;
+// }
+// h2 {
+//   font-size: 2.25rem;
+// }
+// h3 {
+//   font-size: 1.875rem;
+// }
+// h4 {
+//   font-size: 1.5rem;
+// }
+// h5 {
+//   font-size: 1.25rem;
+// }
+// h6 {
+//   font-size: 1.25rem;
+// }
+
+// p {
+//   line-height: 1.8;
+//   color: var(--paragraphColor);
+//   font-weight: 400;
+//   font-family: var(--fontFamily);
+//   font-size: var(--fontSize);
+// }
+
+// p {
+//   line-height: 1.8;
+//   // color: var(--paragraphColor);
+//   font-weight: 400;
+//   font-family: var(--fontFamily);
+//   font-size: var(--fontSize);
+// }
+
+.container {
+  @apply px-4 mx-auto;
+}
+// a {
+//   transition: 0.3s;
+// }
+
+// p {
+//   margin-bottom: 15px;
+//   line-height: 1.8;
+//   color: var(--paragraphColor);
+//   font-weight: 400;
+//   font-family: var(--fontFamily);
+//   font-size: var(--fontSize);
+// }
+
+.sub-title {
+  color: #ffcc00;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+.btn-brand {
+  @apply bg-yellow-500 font-semibold rounded-md py-4 px-7 hover:text-white;
+  &:hover {
+    background-color: #231900;
+    transition: var(--transition);
+  }
+}
+.btn-brand-secondary {
+  @apply font-semibold rounded-md  py-4 px-7 bg-gray-900 text-white;
+  &:hover {
+    background-color: #231900;
+    transition: var(--transition);
+  }
+}
+
+.carousel .slick-arrow.slick-prev,
+.carousel .slick-arrow.slick-next {
+  @apply flex items-center justify-center w-10 h-10 rounded-full bg-red-400;
+  z-index: 1;
+}
+.carousel .slick-arrow.slick-prev:hover,
+.carousel .slick-arrow.slick-next:hover {
+  @apply flex items-center justify-center w-10 h-10 rounded-full bg-red-400 hover:bg-gray-900;
+}
+.carousel .slick-prev {
+  left: -9px;
+}
+.carousel .slick-next {
+  right: -10px;
+}
+.slick-prev::before,
+.slick-next::before {
+  display: none;
+}
